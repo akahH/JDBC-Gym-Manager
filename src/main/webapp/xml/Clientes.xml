@@ -1,0 +1,11 @@
+<Clientes>
+    <Cliente NIF="123456789">
+        <Nome>António</Nome>
+        <Apelido>Reis</Apelido>
+        <DataNasc>1990-12-21</DataNasc>
+        <Email>antonio.reis@gmail.com</Email>
+        <Telemovel>912345678</Telemovel>
+        <Username>antonioReis</Username>
+        <Password>password01</Password>
+    </Cliente>
+</Clientes>

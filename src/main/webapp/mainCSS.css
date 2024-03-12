@@ -1,0 +1,478 @@
+@charset "ISO-8859-1";
+
+@font-face {
+	font-family: 'designer';
+	src: url('recursos/Designer.otf') format('truetype');
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	margin: 30;
+	background: url('recursos/gymBackground.jpg') no-repeat center center
+		fixed;
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	color: orange;
+	font-size: 80px;
+	margin-bottom: 20px;
+	font-family: 'designer', sans-serif;
+	-webkit-text-stroke: 2px white;
+	text-stroke: 2px white;
+}
+
+.center-container {
+	display: flex;
+	font-family: 'designer', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.center-container .text {
+	margin-bottom: 20px;
+}
+
+.center-container .btn {
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: orange;
+}
+
+.center-container .input-group, .center-container .dropdown {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.center-container .input-group input, .center-container .dropdown select
+	{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* styles.css (additions) */
+.weekday-divider {
+	background-color: orange;
+	height: 3px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.mancha-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.mancha-table th, .mancha-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.sign-up-btn {
+	margin-top: 10px;
+}
+
+.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f8f9fa;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-link {
+	display: flex;
+	align-items: center;
+}
+
+.home-link a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+}
+
+.home-link img {
+	margin-right: 10px;
+}
+
+.logout-btn {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f8f9fa;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-link {
+	display: flex;
+	align-items: center;
+}
+
+.home-link a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+}
+
+.home-link img {
+	margin-right: 10px;
+}
+
+.logout-btn {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.equipamento-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.equipamento-table th, .equipamento-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.equipamento-table th {
+	background-color: #f2f2f2;
+}
+
+.add-btn {
+	background-color: green;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.remove-btn {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+#searchClienteDiv {
+	display: block;
+}
+
+#searchClienteDiv label {
+	text-align: center;
+}
+
+#searchClienteDiv input {
+	width: 100%;
+}
+
+#clientes {
+	display: block;
+}
+
+#clientes ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#clientes li {
+	margin-bottom: 5px;
+}
+
+.mancha-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.mancha-table th, .mancha-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.sign-up-btn {
+	margin-top: 10px;
+}
+
+.weekday-divider {
+	background-color: orange;
+	height: 3px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.schedule-container, .contacts-container, .alterarHorario,
+	.alterarContacts {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.schedule-table, .contacts-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.schedule-table th, .schedule-table td, .contacts-table th,
+	.contacts-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.alterarHorario form, .alterarContatos form {
+	display: inline-block;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.alterarHorario h4, .alterarContatos h4 {
+	margin-top: 10px;
+}
+
+.orange-line {
+	width: 100%;
+	height: 2px;
+	background-color: orange;
+	margin-top: 20px;
+}
+
+#searchClienteDiv {
+	display: block;
+}
+
+#searchClienteDiv label {
+	text-align: center;
+}
+
+#searchClienteDiv input {
+	width: 100%;
+}
+
+#clientes {
+	display: block;
+}
+
+#clientes ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#clientes li {
+	margin-bottom: 5px;
+}
+
+#dataDiv {
+	display: none;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.form-container {
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.form-container form {
+	padding: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.form-container .btn-primary, .form-container .btn-orange {
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+	background-color: orange;
+	font-family: 'designer', sans-serif;
+}
+
+.image-list {
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	border-radius: 15px;
+	margin-top: 20px;
+	overflow: auto;
+}
+
+.multimedia-table {
+	margin: auto;
+	border-collapse: collapse;
+	width: 80%;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+.multimedia-table th, .multimedia-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.multimedia-table th {
+	background-color: #f2f2f2;
+}
+
+.image-list img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin: 10px;
+}
+
+.form-container form {
+	padding: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.logout-btn {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.rooms-container, .equipment-container {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.rooms-table, .equipment-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.rooms-table th, .rooms-table td, .equipment-table th, .equipment-table td
+	{
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.edit-delete-col {
+	text-align: center;
+}
+
+.edit-delete-col button {
+	margin: 5px;
+}
+
+.create-resource-btn {
+	margin-top: 10px;
+}
+
+.patologias-table, .objetivos-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.patologias-table th, .patologias-table td, .objetivos-table th,
+	.objetivos-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.patologias-table th, .objetivos-table th {
+	background-color: #f2f2f2;
+}
+
+.mancha-table th, .mancha-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+#fichaCliente {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.sala-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.sala-table th, .sala-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+    .pt-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+.pt-profile img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid orange; /* Add an orange border */
+  margin-bottom: 10px;
+}
+
+    .pt-profile .name {
+      font-size: 20px;
+      color: #333;
+    }
